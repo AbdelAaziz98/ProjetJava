@@ -1,0 +1,82 @@
+/* JavaFX CSS - Leave this comment until you have at least create one rule which uses -fx-Property */
+
+#backclient{
+	-fx-background-image:url("/Images/back.png") ;
+	-fx-background-size: cover ;
+}
+#backacc{
+	-fx-background-image:url("/Images/back.png") ;
+	-fx-background-size: cover ;
+}
+#user:focused{
+
+ -fx-background-insets: 0, 0, 1, 2;
+}
+#mdp1:focused{
+ -fx-background-insets: 0, 0, 1, 2;
+}
+
+.tab{
+	-fx-background-color: #82b74b;
+	-fx-text-fill: #FFF;
+	-fx-selection-bar: #c1946a; 
+	
+}
+
+
+
+
+.tab:even{
+	-fx-background-color:#3e4444;
+	-fx-text-fill: #FFF;
+
+	
+}
+#tableview{
+		-fx-background-color:#FFF;
+		
+	
+}
+#resa{
+-fx-background-color:#999999;}
+#supprimer{
+	-fx-text-fill: #FFF;
+}
+#modifier{
+	-fx-text-fill: #FFF;
+}
+.pane:hover{
+	
+	-fx-background-color:#999999;
+}
+
+#login:hover{
+		-fx-background-color: #BE8849;
+	
+}
+#cnx{
+	-fx-background-color: #BE8849;
+	-fx-background-radius: 12.0px ;
+	-fx-font-family: 'oswald';
+	-fx-font-size: 12.0pt ;
+}
+#cnx:hover{
+	-fx-background-color: #BEAC83;
+	-fx-background-radius: 12.0px ;
+	-fx-font-family: 'oswald';
+	-fx-font-size: 13.0pt ;
+	}
+	
+#nom{
+	
+	-fx-border-color: gold ;
+	-fx-font-family: 'oswald';
+	-fx-font-size: 14.0px ;
+	-fx-text-fill: #BE8849;
+	
+}
+#mdp{
+	-fx-border-color: gold ;
+	-fx-font-family: 'oswald';
+	-fx-text-fill: #BE8849;
+}

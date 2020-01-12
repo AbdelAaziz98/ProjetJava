@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ContextMenu?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuBar?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.effect.ColorAdjust?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.effect.Light.Distant?>
+<?import javafx.scene.effect.Lighting?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane minHeight="500.0" minWidth="650.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller.ControllerGenFacture">
+   <children>
+      <AnchorPane id="backacc" layoutX="-1.0" layoutY="-2.0" minHeight="500.0" minWidth="650.0" style="-fx-background-color: #ffffff;">
+         <children>
+            <VBox layoutX="-1.0" layoutY="22.0" prefHeight="481.0" prefWidth="123.0" spacing="20.0" style="-fx-background-color: #3e4444;">
+               <children>
+                  <Pane prefHeight="42.0" prefWidth="94.0" styleClass="pane">
+                     <children>
+                        <Label layoutX="58.0" layoutY="12.0" prefHeight="18.0" prefWidth="63.0" style="-fx-text-fill: #FFF;" text="Hotel     +" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="94.0" styleClass="pane">
+                     <children>
+                        <Label layoutX="55.0" layoutY="12.0" prefHeight="18.0" prefWidth="63.0" style="-fx-text-fill: #FFF;" text="Client     +" />
+                     </children>
+                  </Pane>
+                  <Pane id="resa" fx:id="resa" layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="94.0" styleClass="pane">
+                     <children>
+                        <Label layoutX="26.0" layoutY="12.0" prefHeight="18.0" prefWidth="91.0" style="-fx-text-fill: #FFF;" text="Reservation   +" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="10.0" prefHeight="42.0" prefWidth="94.0" styleClass="pane">
+                     <children>
+                        <Label layoutX="31.0" layoutY="12.0" prefHeight="18.0" prefWidth="91.0" style="-fx-text-fill: #FFF;" text="Chambres    +" />
+                     </children>
+                  </Pane>
+                  <Pane layoutX="10.0" layoutY="94.0" prefHeight="42.0" prefWidth="94.0" styleClass="pane">
+                     <children>
+                        <Label layoutX="43.0" layoutY="12.0" prefHeight="18.0" prefWidth="91.0" style="-fx-text-fill: #FFF;" text="Factures   +" />
+                     </children>
+                  </Pane>
+               </children>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+               <effect>
+                  <Lighting>
+                     <bumpInput>
+                        <ColorAdjust>
+                           <input>
+                              <Glow />
+                           </input>
+                        </ColorAdjust>
+                     </bumpInput>
+                     <light>
+                        <Light.Distant />
+                     </light>
+                  </Lighting>
+               </effect>
+            </VBox>
+            <MenuBar layoutY="-1.0" prefHeight="25.0" prefWidth="651.0" style="-fx-background-color: #405d27;">
+               <contextMenu>
+                  <ContextMenu>
+                     <items>
+                        <MenuItem mnemonicParsing="false" text="Unspecified Action" />
+                     </items>
+                  </ContextMenu>
+               </contextMenu>
+            </MenuBar>
+            <Label layoutX="496.0" layoutY="91.0" prefHeight="32.0" prefWidth="91.0" style="-fx-font-size: 16; -fx-text-fill: #ffffff; -fx-font-family: open sans;" text="Reservations" />
+            <Label fx:id="nbrligne" layoutX="519.0" layoutY="54.0" prefHeight="49.0" prefWidth="56.0" style="-fx-font-size: 40; -fx-text-fill: #FFFFFF;" text="20" />
+            <Label layoutX="137.0" layoutY="30.0" text="Agent " />
+            <Label layoutX="194.0" layoutY="30.0" text="root" />
+            <Label layoutX="294.0" layoutY="55.0" prefHeight="58.0" prefWidth="154.0" text="La facture">
+               <font>
+                  <Font name="System Bold" size="33.0" />
+               </font>
+            </Label>
+            <VBox layoutX="200.0" layoutY="158.0" prefHeight="207.0" prefWidth="154.0" spacing="10.0">
+               <children>
+                  <Label prefHeight="20.0" prefWidth="123.0" text="Num de Facture :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="76.0" text="Id Client  :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="123.0" text="Id Reservation :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="154.0" text="Reservé dans l'hotel : ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="91.0" text="Chambre  :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label prefHeight="20.0" prefWidth="123.0" text="Montant  :">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <VBox layoutX="355.0" layoutY="158.0" prefHeight="207.0" prefWidth="154.0" spacing="10.0">
+               <children>
+                  <Label fx:id="idFacture" prefHeight="20.0" prefWidth="123.0" text="Num">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="idClient" prefHeight="20.0" prefWidth="76.0" text="Id Client">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="idResa" prefHeight="20.0" prefWidth="123.0" text="Id Reservation ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="reservationHotel" prefHeight="20.0" prefWidth="154.0" text="Reservé dans l'hotel ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="chambre" prefHeight="20.0" prefWidth="91.0" text="Chambre  ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+                  <Label fx:id="montant" prefHeight="20.0" prefWidth="123.0" text="Montant  ">
+                     <font>
+                        <Font size="14.0" />
+                     </font>
+                  </Label>
+               </children>
+            </VBox>
+            <Button layoutX="497.0" layoutY="452.0" mnemonicParsing="false" onAction="#imprimer" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #3e4444;" text="Imprimer Facture" textFill="WHITE" />
+            <Button layoutX="352.0" layoutY="452.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="123.0" style="-fx-background-color: #3e4444;" text="Retour" textFill="WHITE">
+               <font>
+                  <Font name="System Bold" size="12.0" />
+               </font></Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
